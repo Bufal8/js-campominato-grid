@@ -11,7 +11,7 @@
 
 
 
-.square{
+#square{
     width: 600px;
     height: 600px;
     margin: 60px auto;
@@ -27,10 +27,8 @@
 
 }
 
-.casella span{
-    display: none;
-}
 
-.casella span.clicked{
-    color: cyan;
+
+.casella.clicked{
+    background-color: cyan;
 }
