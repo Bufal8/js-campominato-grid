@@ -3,14 +3,18 @@ const squareElement = document.getElementById("square");
 console.log(squareElement);
 
 // Creo un array di numeri in range 1 / 100 ordinati
-const arrayCaselle = creaArrayNumeriOrdinati(1, 100);
-console.log(arrayCaselle);
+// const arrayCaselle = creaArrayNumeriOrdinati(1, 100);
+// console.log(arrayCaselle);
 
 // Utilizzo il ciclo for per creare tutte le caselle
-for (let i = 0; i < 100; i++){
+for (let i = 1; i <= 100; i++){
 
+    
     // Eseguo la funzione creaCaselleSquare tante volte quante caselle voglio creare
     const newCaselle = creaCaselleSquare("div", "casella");
+    
+    
+    newCaselle.append(i);
 
     // Creo una funzione che aggiunga la classe "clicked" 
     // alla casella quando cliccata
@@ -40,20 +44,42 @@ function creaCaselleSquare(tagType, classToAdd){
 }
 
 // Creo la funzione che riempie l'array vuoto
-function creaArrayNumeriOrdinati(min, max){
+// function creaArrayNumeriOrdinati(min, max){
     
-    const arrayInterno = [];
+//     // creare array interno 
+//     const arrayInterno = [];
 
-    // creare numero 
-    while (arrayInterno.lenght < max){
+//     // Imposto una variabile di iterazione e la imposto al valore minimo inserito nella funzione
+//     let i = min;
+//     // Creo un ciclo while che iteri la funzione fino al raggiungimento del numero massimo inserito nella funzione
+//     while (i <= max){
         
-        arrayInterno.push([i]);
+//         // Aggiungo all'array interno alla funzione ogni elemento iterato dal ciclo while
+//         arrayInterno.push(i);
+//         i++
     
-    }
+//     }
     
-    return arrayInterno;
-}
+//     return arrayInterno;
+// }
 
-function numeroMinMax(){
+/* // ciclo for per creare elementi e output
+for(let i = 1; i <= 100; i++){
+    
+    
+    // creare nuovo elemento
+    const numero = document.createElement('span');
+    
+    
+    // aggiungere classe ad ogni span
+    // quadrato.classList.add('square')
+    
+    
+    // inserire il valore all'interno dell'elemento creato
+    // numero.append(i);
+    
+    // se l'elemento è divisibile sia per 3 che per 5
+    if(i % 15 == 0){
+        quadrato.append("fizzbuzz")
+        quadrato.classList.add("fizzbuzz") */
 
-}
