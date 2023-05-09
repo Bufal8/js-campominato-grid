@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenitore-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.square{
+    width: 600px;
+    height: 600px;
+    margin: 60px auto;
+    border: 5px solid #000;
+}
+
+.casella{
+    float: left;
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    border: 2px solid #000;
+    cursor: pointer;
+
+}
+
+.casella span{
+    display: none;
+}
+
+.casella span.clicked{
+    color: cyan;
+}
